@@ -24,7 +24,7 @@ export default function Home() {
             Discover hundreds of exciting PokÉmon and go on an adventure!
           </p>
           <button
-            className='px-6 py-3 bg-primary-100 hover:bg-primary-200 text-white rounded-lg font-medium hover:bg-primary-600'
+            className='px-6 py-3 focus:ring-primary-200 bg-primary-100 hover:bg-primary-200 text-white rounded-lg font-medium hover:bg-primary-600'
             onClick={() => navigate('/components/PokeList')}
           >
             Start
