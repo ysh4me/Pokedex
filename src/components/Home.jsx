@@ -8,20 +8,25 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <div className='h-[880px]'>
-        <div>
+      <div className=''>
+        <section class='cards'>
+          <div class='card back animated'></div>
+          <div class='card back animated'></div>
+          <div class='card back animated'></div>
+        </section>
+        {/* <div>
           <img
             className='object-cover w-full h-full'
             src='/images/pokemon-landscape.gif'
             alt='Pokémon Landscape'
           />
-        </div>
-        <div className='flex flex-col items-center justify-center p-6 m-6 bg-transparent border border-gray-200 rounded-lg shadow parallax'>
-          <h2 className='text-2xl font-bold mb-4 text-white'>
-            Welcome to the PokÉmon world
+        </div> */}
+        <div className='flex flex-col items-center justify-center p-6 m-6 bg-transparent border border-gray-500 rounded-lg shadow parallax'>
+          <h2 className='text-2xl font-bold mb-4 text-black'>
+            Welcome to the Pokemon world
           </h2>
-          <p className='text-xl text-white mb-8'>
-            Discover hundreds of exciting PokÉmon and go on an adventure!
+          <p className='text-xl text-black mb-8'>
+            Discover hundreds of exciting Pokemon and go on an adventure!
           </p>
           <button
             className='px-6 py-3 focus:ring-primary-200 bg-primary-100 hover:bg-primary-200 text-white rounded-lg font-medium hover:bg-primary-600'

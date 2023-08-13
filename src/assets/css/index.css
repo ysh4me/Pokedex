@@ -16,6 +16,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --backcard: url(https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg);
+
 }
 
 @font-face {
@@ -90,12 +93,63 @@ button:focus-visible {
   background: linear-gradient(115deg, #D9D3D7 57.7%, #333333 57.7%);
 }
 
-.parallax {
-  transform: translateY(-600px);
-}
-
 .image {
   background-image: url('/images/pokemon-landscape.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+/* test */
+
+.card {
+  width: 71.5vw;
+  height: 100vw;
+
+  @media screen and (min-width: 600px) {
+    width: clamp(12.9vw, 61vh, 18vw);
+    height: clamp(18vw, 85vh, 25.2vw);
+  }
+  
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  overflow: hidden;
+  z-index: 10;
+  touch-action: none;
+  
+  border-radius: 5% / 3.5%;
+  box-shadow: #1a1a1a 7px 7px 10px -5px;
+  
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+  will-change: transform, filter;
+
+
+  background-color: #040712;
+  background-image: var(--front);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform-origin: center;  
+}
+
+.card.back {
+  --front: var(--backcard);
+}
+
+
+.cards { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  perspective: 2000px;
+  position: relative;
+  z-index: 1;
+}
+
+
+@media screen and (min-width: 600px) {
+  .cards {
+    flex-direction: row;
+  }
 }
