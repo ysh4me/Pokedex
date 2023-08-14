@@ -18,6 +18,10 @@
   -webkit-text-size-adjust: 100%;
 
   --backcard: url(https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg);
+  --squirlefront: url(https://cdn.cardsrealm.com/images/cartas/bw7-boundaries-crossed/en/med/squirtle-29149-29.png?9922);
+  --charmanderfront: url(https://cdn.cardsrealm.com/images/cartas/pokemon-go/en/med/charmander-pgo-8-8.png?4370?&width=275);
+  --bulbasaurfront: url(https://cdn.cardsrealm.com/images/cartas/sm35-shining-legends/en/med/bulbasaur-173-1.png?9981?&width=275);
+
 
 }
 
@@ -116,14 +120,26 @@ button:focus-visible {
   
   border-radius: 5% / 3.5%;
   box-shadow: #1a1a1a 7px 7px 10px -5px;
+  will-change: transform, filter;
+
   
   transition: transform 0.5s ease, box-shadow 0.2s ease;
   background-image: var(--front);
   background-size: cover;
 }
 
-.card.back {
-  --front: var(--backcard);
+.card:hover {
+  box-shadow: none;
+}
+
+.card.squirtle {
+  --front: var(--squirlefront);
+}
+.card.charmander {
+  --front: var(--charmanderfront);
+}
+.card.bulbasaur {
+  --front: var(--bulbasaurfront);
 }
 
 

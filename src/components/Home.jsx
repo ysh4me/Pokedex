@@ -9,18 +9,6 @@ export default function Home() {
     <div>
       <Navbar />
       <div className=''>
-        <section class='cards'>
-          <div class='card back animated'></div>
-          <div class='card back animated'></div>
-          <div class='card back animated'></div>
-        </section>
-        {/* <div>
-          <img
-            className='object-cover w-full h-full'
-            src='/images/pokemon-landscape.gif'
-            alt='Pokémon Landscape'
-          />
-        </div> */}
         <div className='flex flex-col items-center justify-center p-6 m-6 bg-transparent border border-gray-500 rounded-lg shadow parallax'>
           <h2 className='text-2xl font-bold mb-4 text-black'>
             Welcome to the Pokemon world
@@ -34,6 +22,11 @@ export default function Home() {
           >
             Start
           </button>
+        </div>
+        <div class='cards'>
+          <div class='card squirtle animated'></div>
+          <div class='card charmander animated'></div>
+          <div class='card bulbasaur animated'></div>
         </div>
       </div>
       <Footer />
