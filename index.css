@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --backcard: url(https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg);
+
+}
+
+@font-face {
+  font-family: 'pixel';
+  src: url('/fonts/VPPixel-Simplified.ttf');
+}
+
+* {
+  font-family: 'pixel', sans-serif;
+}
+
+a {
+  font-weight: 500;
+  color: #FF5948;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #FF5948;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #FF5948;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #FF5948;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.pokedex {
+  text-shadow: 2px 2px 2px #ffffff;
+}
+
+.ombre {
+  box-shadow: rgba(0, 0, 0, 0.25) -9px 0px 10px;
+  background: linear-gradient(115deg, #ffffff 57.7%, #333333 57.7%);
+}
+
+.poke_bande {
+  background: linear-gradient(115deg, #D9D3D7 57.7%, #333333 57.7%);
+}
+
+.image {
+  background-image: url('/images/pokemon-landscape.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.card {
+  width: 71.5vw;
+  height: 100vw;
+
+  @media screen and (min-width: 600px) {
+    width: clamp(12.9vw, 61vh, 18vw);
+    height: clamp(18vw, 85vh, 25.2vw);
+  }
+  
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  overflow: hidden;
+  z-index: 10;
+  
+  border-radius: 5% / 3.5%;
+  box-shadow: #1a1a1a 7px 7px 10px -5px;
+  
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+  background-image: var(--front);
+  background-size: cover;
+}
+
+.card.back {
+  --front: var(--backcard);
+}
+
+
+.cards { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  perspective: 2000px;
+  position: relative;
+  z-index: 1;
+}
+
+
+@media screen and (min-width: 600px) {
+  .cards {
+    flex-direction: row;
+  }
+}
