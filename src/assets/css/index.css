@@ -99,8 +99,6 @@ button:focus-visible {
   background-position: bottom;
 }
 
-/* test */
-
 .card {
   width: 71.5vw;
   height: 100vw;
@@ -115,21 +113,13 @@ button:focus-visible {
   margin: 20px;
   overflow: hidden;
   z-index: 10;
-  touch-action: none;
   
   border-radius: 5% / 3.5%;
   box-shadow: #1a1a1a 7px 7px 10px -5px;
   
   transition: transform 0.5s ease, box-shadow 0.2s ease;
-  will-change: transform, filter;
-
-
-  background-color: #040712;
   background-image: var(--front);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  transform-origin: center;  
 }
 
 .card.back {
