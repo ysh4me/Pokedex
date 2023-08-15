@@ -23,10 +23,10 @@ export default function Home() {
             Start
           </button>
         </div>
-        <div class='cards'>
-          <div class='card squirtle animated'></div>
-          <div class='card charmander animated'></div>
-          <div class='card bulbasaur animated'></div>
+        <div className='cards'>
+          <div className='card squirtle animated'></div>
+          <div className='card charmander animated'></div>
+          <div className='card bulbasaur animated'></div>
         </div>
       </div>
       <Footer />

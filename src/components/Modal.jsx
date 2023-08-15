@@ -14,12 +14,12 @@ export default function Modal({
   return (
     <div className='block p-6 m-6 bg-white border border-gray-200 rounded-lg shadow image'>
       <div className='flex justify-end m-3'>
-        <p
+        <span
           onClick={onClick}
-          className='m-2 p-[2px] px-[9px] rounded-full border border-primary-50 bg-primary-50 w-[30px]'
+          className='cursor-pointer m-2 p-[2px] px-[9px] rounded-full border border-primary-50 bg-primary-50 w-[30px]'
         >
           X
-        </p>
+        </span>
       </div>
       <div className='flex justify-center'>
         <div className='flex w-full justify-around 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col 2xs:flex-col'>
