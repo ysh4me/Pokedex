@@ -16,24 +16,11 @@ export default function Modal({
       <div className='flex justify-end m-3'>
         <button
           type='button'
-          data-popover-target='popover-default'
           onClick={onClick}
           className='cursor-pointer m-2 p-[2px] px-[9px] rounded-full border border-primary-50 bg-primary-50 w-[30px]'
         >
           X
         </button>
-        <div
-          data-popover
-          id='popover-default'
-          role='tooltip'
-          class='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
-        >
-          <div class='px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700'>
-            <h3 class='font-semibold text-gray-900 dark:text-white'>
-              Popover title
-            </h3>
-          </div>
-        </div>
       </div>
       <div className='flex justify-center'>
         <div className='flex w-full justify-around 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col 2xs:flex-col'>
