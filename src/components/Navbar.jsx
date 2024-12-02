@@ -50,7 +50,7 @@ export default function Navbar() {
               <li>
                 <NavLink
                   to='/components/Home'
-                  className='block py-2 pl-3 pr-4 text-primary-100 hover:text-primary-200 rounded md:p-0 dark:text-white'
+                  className='block py-2 pl-3 pr-4 text-white hover:text-primary-200 rounded md:p-0 dark:text-white'
                 >
                   Home
                 </NavLink>
@@ -58,7 +58,7 @@ export default function Navbar() {
               <li>
                 <NavLink
                   to='/components/PokeList'
-                  className='block py-2 pl-3 pr-4 text-primary-100 hover:text-primary-200 rounded md:border-0  md:p-0 dark:text-white dark:hover:text-white'
+                  className='block py-2 pl-3 pr-4 text-white hover:text-primary-200 rounded md:border-0  md:p-0 dark:text-white dark:hover:text-white'
                 >
                   All Pokemons
                 </NavLink>
@@ -66,7 +66,7 @@ export default function Navbar() {
               <li>
                 <NavLink
                   to='/components/Recherche'
-                  className='block py-2 pl-3 pr-4 text-primary-100 hover:text-primary-200 rounded md:border-0  md:p-0 dark:text-white dark:hover:text-white'
+                  className='block py-2 pl-3 pr-4 text-white hover:text-primary-200 rounded md:border-0  md:p-0 dark:text-white dark:hover:text-white'
                 >
                   Search
                 </NavLink>
